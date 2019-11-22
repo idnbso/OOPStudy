@@ -17,10 +17,10 @@ namespace FactoryMethod
 
             _modesFactories = new Dictionary<AirConditionerMode, AirConditionerModeFactory>();
 
-            foreach (AirConditionerMode action in Enum.GetValues(typeof(AirConditionerMode)))
+            foreach (AirConditionerMode mode in Enum.GetValues(typeof(AirConditionerMode)))
             {
-                var factory = (AirConditionerModeFactory)Activator.CreateInstance(Type.GetType("FactoryMethod." + Enum.GetName(typeof(AirConditionerMode), action) + "Factory"));
-                _modesFactories.Add(action, factory);
+                var factory = (AirConditionerModeFactory)Activator.CreateInstance(Type.GetType("FactoryMethod." + Enum.GetName(typeof(AirConditionerMode), mode) + "Factory"));
+                _modesFactories.Add(mode, factory);
             }
 
             #endregion
@@ -28,6 +28,6 @@ namespace FactoryMethod
 
         public static AirConditioner InitializeFactories() => new AirConditioner();
 
-        public IAirConditionerMode ExecuteMode(AirConditionerMode action, double temperature) => _modesFactories[action].Create(temperature);
+        public IAirConditionerMode ExecuteMode(AirConditionerMode mode, double temperature) => _modesFactories[mode].Create(temperature);
     }
 }
