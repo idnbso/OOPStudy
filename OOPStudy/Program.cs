@@ -6,7 +6,18 @@ namespace OOPStudy
     {
         static void Main(string[] args)
         {
-            Composite.Program.Demo();
+            //RunObjectOrientedDesignProgram();
+            RunDesignPatternsProgram();
+        }
+
+        static void RunObjectOrientedDesignProgram()
+        {
+            ObjectOrientedCodeDemo.Program.Demo();
+        }
+
+        static void RunDesignPatternsProgram()
+        {
+            Memento.CodeEditor.CodeEditorProgram.Demo();
         }
     }
 }

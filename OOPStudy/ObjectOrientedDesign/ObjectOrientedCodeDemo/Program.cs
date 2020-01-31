@@ -7,7 +7,7 @@ namespace OOPStudy.ObjectOrientedCodeDemo
 {
     class Program
     {
-        static void Demo()
+        public static void Demo()
         {
             var controlDigit = ControlDigitAlgorithms
                                 .ForAccountingDepartment

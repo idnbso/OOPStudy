@@ -1,0 +1,8 @@
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\obj\Debug\netcoreapp3.1\DesignPatterns.csprojAssemblyReference.cache
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfoInputs.cache
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfo.cs
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\bin\Debug\netcoreapp3.1\DesignPatterns.deps.json
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\bin\Debug\netcoreapp3.1\DesignPatterns.dll
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\bin\Debug\netcoreapp3.1\DesignPatterns.pdb
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\obj\Debug\netcoreapp3.1\DesignPatterns.dll
+C:\Users\idanb\Downloads\Projects\dotnet\OOPStudy\DesignPatterns\obj\Debug\netcoreapp3.1\DesignPatterns.pdb
