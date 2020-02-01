@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern
 {
-    public interface ISalaryCalculator
+    public interface IDevSalaryCalculator
     {
         double CalculateTotalSalary(IEnumerable<DeveloperReport> reports);
     }

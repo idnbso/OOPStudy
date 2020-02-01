@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern
 {
-    public class JuniorDevSalaryCalculator : ISalaryCalculator
+    public class JuniorDevSalaryCalculator : IDevSalaryCalculator
     {
         public double CalculateTotalSalary(IEnumerable<DeveloperReport> reports) => 
             reports

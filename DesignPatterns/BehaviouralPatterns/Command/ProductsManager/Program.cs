@@ -13,11 +13,11 @@ namespace CommandPattern
             var modifyPrice = new ModifyPrice();
             var product = new Product("Phone", 500);
 
-            Execute(product, modifyPrice, new ProductCommand(product, PriceAction.Increase, 100));
+            Execute(modifyPrice, new ProductCommand(product, PriceAction.Increase, 100));
            
-            Execute(product, modifyPrice, new ProductCommand(product, PriceAction.Increase, 50));
+            Execute(modifyPrice, new ProductCommand(product, PriceAction.Increase, 50));
 
-            Execute(product, modifyPrice, new ProductCommand(product, PriceAction.Decrease, 2500));
+            Execute(modifyPrice, new ProductCommand(product, PriceAction.Decrease, 2500));
 
             Console.WriteLine(product);
             Console.WriteLine();
@@ -26,7 +26,7 @@ namespace CommandPattern
             Console.WriteLine(product);
         }
 
-        private static void Execute(Product product, ModifyPrice modifyPrice, ICommand productCommand)
+        private static void Execute(ModifyPrice modifyPrice, ICommand productCommand)
         {
             modifyPrice.SetCommand(productCommand);
             modifyPrice.Invoke();

@@ -8,14 +8,14 @@ namespace StrategyPattern
 {
     public class SalaryCalculator
     {
-        private ISalaryCalculator _calculator;
+        private IDevSalaryCalculator _calculator;
 
-        public SalaryCalculator(ISalaryCalculator calculator)
+        public SalaryCalculator(IDevSalaryCalculator calculator)
         {
             _calculator = calculator;
         }
 
-        public void SetCalculator(ISalaryCalculator calculator) => _calculator = calculator;
+        public void SetCalculator(IDevSalaryCalculator calculator) => _calculator = calculator;
 
         public double Calculate(IEnumerable<DeveloperReport> reports) => _calculator.CalculateTotalSalary(reports);
     }

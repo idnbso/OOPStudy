@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.BehaviouralPatterns.Memento.CodeEditor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,23 +7,21 @@ namespace Memento.CodeEditor
 {
     public class Editor
     {
-        private string content { get; set; }
-        private List<string> contentHistory = new List<string>();
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public string FontName { get; set; } = "Ariel";
+        public int FontSize { get; set; } = 11; // pixels
 
-        public void setContent(string v)
+        public EditorState CreateState() => new EditorState() { Title = Title, Content = Content, FontName = FontName, FontSize = FontSize };
+
+        public void Restore(EditorState state)
         {
-            contentHistory.Add(item: v);
-            content = v;
+            Title = state.Title;
+            Content = state.Content;
+            FontName = state.FontName;
+            FontSize = state.FontSize;
         }
 
-        public void undo()
-        {
-            contentHistory.RemoveAt(index: contentHistory.Count - 1);
-        }
-
-        public override string ToString()
-        {
-            return string.Join(", ", contentHistory);
-        }
+        public override string ToString() => CreateState().ToString();
     }
 }
