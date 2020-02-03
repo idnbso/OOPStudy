@@ -14,7 +14,7 @@ namespace Composite
             phone.CalculateTotalPrice();
             Console.WriteLine();
 
-            //composite present
+            // Composite present
             var rootBox = new CompositeGift("RootBox", 0);
             var truckToy = new SingleGift("TruckToy", 289);
             var plainToy = new SingleGift("PlainToy", 587);

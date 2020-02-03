@@ -27,7 +27,8 @@ namespace OOPStudy
             //DesignPatterns.BehaviouralPatterns.Observer.SpreadsheetApp.SpreadsheetEditor.Run();
             //DesignPatterns.BehaviouralPatterns.Mediator.GUIFrameowrkWithObserver.GUIApp.Run();
             //DesignPatterns.BehaviouralPatterns.ChainOfResponsibility.ServerAndClient.WebApplication.Run();
-            DesignPatterns.BehaviouralPatterns.Visitor.HtmlEditor.HtmlEditor.Run();
+            //DesignPatterns.BehaviouralPatterns.Visitor.HtmlEditor.HtmlEditor.Run();
+            DesignPatterns.StructuralPatterns.Composite.DiagramApp.DiagramEditor.Run();
         }
     }
 }
