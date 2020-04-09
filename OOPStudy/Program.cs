@@ -28,7 +28,13 @@ namespace OOPStudy
             //DesignPatterns.BehaviouralPatterns.Mediator.GUIFrameowrkWithObserver.GUIApp.Run();
             //DesignPatterns.BehaviouralPatterns.ChainOfResponsibility.ServerAndClient.WebApplication.Run();
             //DesignPatterns.BehaviouralPatterns.Visitor.HtmlEditor.HtmlEditor.Run();
-            DesignPatterns.StructuralPatterns.Composite.DiagramApp.DiagramEditor.Run();
+            //DesignPatterns.StructuralPatterns.Composite.DiagramApp.DiagramEditor.Run();
+            //DesignPatterns.StructuralPatterns.Adapter.ImageEditorApp.ImageEditor.Run();
+            //DesignPatterns.StructuralPatterns.Decorator.CloudApp.CloudApp.Run();
+            //DesignPatterns.StructuralPatterns.Facade.NotificationSystem.NotificationSender.Run();
+            //DesignPatterns.StructuralPatterns.Flyweight.MapsApp.MapsApp.Run();
+            //DesignPatterns.StructuralPatterns.Bridge.UniversalRemoteControl.RemoteControlApp.Run();
+            DesignPatterns.StructuralPatterns.Proxy.EbookReader.EbookReaderApp.Run();
         }
     }
 }
